@@ -1,0 +1,22 @@
+# ====== SERVER CONFIG ======
+PORT=3000
+NODE_ENV=development
+
+# ====== GOOGLE OAUTH ======
+# Get this from: https://console.cloud.google.com/apis/credentials
+# Create an OAuth 2.0 Client ID (Web application)
+# Add your frontend URL to "Authorized JavaScript origins"
+GOOGLE_CLIENT_ID=your-client-id-here.apps.googleusercontent.com
+
+# ====== JWT ======
+# Use a long random string (e.g., output of: node -e "console.log(require('crypto').randomBytes(64).toString('hex'))")
+JWT_SECRET=change-this-to-a-long-random-secret-string-in-production-please
+
+# ====== ADMIN LOGIN ======
+# Username and password to access the admin panel
+ADMIN_USERNAME=admin
+ADMIN_PASSWORD=admin123
+# Change this in production!
+
+# ====== DATABASE ======
+DB_PATH=./data/english-sikho.db
